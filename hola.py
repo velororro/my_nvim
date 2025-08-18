@@ -1,5 +1,5 @@
 print("hello")
 
-i = 1
+i = 24
 
 print(i)
