@@ -2,6 +2,7 @@ local opt = vim.o
 
 -- General
 opt.number = true
+opt.relativenumber = true
 vim.opt.mouse = 'a'
 vim.opt.encoding = 'utf-8'
 vim.cmd('syntax on')
