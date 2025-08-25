@@ -40,14 +40,5 @@ vim.api.nvim_set_keymap('n', '<S-Right>', '<C-w>l', { noremap = true, silent = t
 -- Crear split vertical con Shift+v
 vim.api.nvim_set_keymap('n', '<S-v>', ':vsplit<CR>', { noremap = true, silent = true })
 
-
--- Colorscheme
---vim.cmd.colorscheme("slate")
--- Fondo transparente
--- Modo gráfico (GUI)
---vim.cmd('highlight Normal guibg=none')
---vim.cmd('highlight NonText guibg=none')
--- Modo de terminal (CTerm)
---vim.cmd('highlight Normal ctermbg=none')
---vim.cmd('highlight NonText ctermbg=none')
-
+-- LSP Java
+vim.lsp.enable("jdtls")
