@@ -41,4 +41,4 @@ vim.api.nvim_set_keymap('n', '<S-Right>', '<C-w>l', { noremap = true, silent = t
 vim.api.nvim_set_keymap('n', '<S-v>', ':vsplit<CR>', { noremap = true, silent = true })
 
 -- LSP Java
-vim.lsp.enable("jdtls")
+--vim.lsp.enable("jdtls")

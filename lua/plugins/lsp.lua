@@ -5,7 +5,17 @@ return {
     "folke/lazydev.nvim",
   },
   config = function()
-    -- defaults
+    -- default
+    -- habilitar lsp java
+    vim.lsp.config("jdtls", {
+      settings = {
+        java = {
+          -- Custom eclipse.jdt.ls options go here
+        },
+      },
+    })
+    vim.lsp.enable("jdtls")
+
     vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
     vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
     vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
