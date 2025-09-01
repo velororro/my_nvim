@@ -6,6 +6,6 @@ return {
         signcolumn = false,
         -- resaltar el numero
         numhl = true,
-        max_file_lenght = 10000,
+        --max_file_lenght = 10000,
     }
 }
