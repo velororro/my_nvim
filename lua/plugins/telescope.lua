@@ -48,7 +48,7 @@ return {
     {
       "<leader>gc",
       function ()
-        require("telescope.builtin").git_bcommits()
+        require("telescope.builtin").git_commits()
       end,
       desc = "Telescope Git Commits",
     },
@@ -58,6 +58,27 @@ return {
         require("telescope.builtin").git_branches()
       end,
       desc = "Telescope Git Branches",
+    },
+    {
+      "<leader>pf",
+      function ()
+        require("telescope.builtin").find_files()
+      end,
+      desc = "Telescope Find Files",
+    },
+    {
+      "<leader>ph",
+      function ()
+        require("telescope.builtin").help_tags()
+      end,
+      desc = "Telescope Help",
+    },
+    {
+      "<leader>bb",
+      function ()
+        require("telescope").extensions.file_browser.file_browser({ path = "%:h:p", select_buffer = true })
+      end,
+      desc = "Telescope File Browser",
     }
-  }
+  },
 }

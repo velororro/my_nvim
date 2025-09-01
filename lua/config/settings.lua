@@ -7,6 +7,7 @@ vim.opt.mouse = 'a'
 vim.opt.encoding = 'utf-8'
 vim.cmd('syntax on')
 vim.g.mapleader = " "
+vim.o.termguicolors = true
 
 
 -- Tab 4 espacios
