@@ -37,5 +37,8 @@ return {
         }
       }
     })
-  end
+  end,
+  opts = {
+    angularls = {},
+  }
 }
